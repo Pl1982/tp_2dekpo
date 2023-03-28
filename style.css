@@ -188,7 +188,7 @@ html {
     position: absolute;
     border-radius: 50%;
     top: 27%;
-    left: -134%;
+    left: -130%;
     z-index: -1;
     margin-left: 41em;
 }
@@ -228,4 +228,36 @@ html {
         gap: 2em;
 
     }
+
+    .bg-square-about-1 {
+        width: 125%;
+        height: 80%;
+        top: 35%;
+        left: -707%;
+    }
+}
+
+/********************************Formulaire********************************/
+.search {
+    background-color: var(--primary);
+    text-align: center;
+    margin-top: 15em;
+}
+
+.search h3 {
+    padding-top: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+    .search {
+        width: 100%;
+        margin-top: 1em;
+    }
+}
+
+/*********************Videos********************************/
+.title h3 {
+    padding-top: 1.5em;
+    font-size: 1.5em;
+    text-align: center;
 }
