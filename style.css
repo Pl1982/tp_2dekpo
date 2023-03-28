@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap');
+
+@font-face {
+    font-family: 'Foobar';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Foobar Pro Regular'), url('../fonts/Foobar\ Pro-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+:root {
+    --primary: #5586ed;
+    --secondary: #53d7f4;
+    --white: rgb(202, 202, 209);
+    --box-shadow-default: 1px 1px 30px -10px rgba(0, 0, 0, .7);
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline-block;
+
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+html {
+    background-color: var(--white);
+}
+
+/********************RESET CSS DEFAULT= TOUS LES ELEMENTS PAR DEFAUT***************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/********************************NavBar********************************/
+.img_backg {
+    background-image: url('./asset/media/img/spectrum-g24a31e17c_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 82px);
+
+}
+
+.entete {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em;
+}
+
+.navbar {
+    background-color: var(--primary);
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    width: 50px;
+    margin: 1em;
+}
+
+/******************************Banner********************************/
+
+
+.banner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 17em;
+}
+
+
+
+.banner h1 {
+    font-size: 3.5em;
+    color: var(--white);
+}
+
+
+.banner p {
+    font-size: 1.5em;
+    padding-top: 3.5em;
+    color: var(--white);
+}
+
+.img_fond {
+    width: 35%;
+    margin: auto;
+}
+
+.paragraphe1 {
+    width: 60%;
+    text-align: left;
+    margin-top: .5em;
+
+}
+
+.paragraphe1 a {
+    text-align: center;
+}
+
+.btn {
+    font-size: large;
+    background-color: #53d7f4;
+    color: #091981;
+    margin-top: 1em;
+    border-radius: 12px;
+    padding: .5em;
+}
+
+@media screen and (max-width:768px) {
+    .img_backg {
+        height: calc(115vh - 82px);
+    }
+
+    .paragraphe1 {
+        width: 100%;
+        font-size: .7em;
+        padding-top: 2.3em;
+        text-align: center;
+        margin-top: 0em;
+    }
+
+
+
+    .banner p {
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    .btn {
+        margin-bottom: 1em;
+    }
+
+
+    .banner {
+        display: unset;
+
+    }
+
+    .img_fond {
+        display: unset;
+        margin: 0 1.5em;
+    }
+}
+
+/*****************************789******************/
+
+.features {
+    text-align: center;
+    margin-top: 6em;
+}
+
+@media screen and (max-width:768px) {
+    .features {
+        margin-top: 2.8em;
+    }
+}
+
+/***************************Camera****************/
+.banner1 h2 {
+    font-size: 2em
+}
+
+.banner1 p {
+    padding-top: 1em;
+}
+
+.bg-square-about-1 {
+    background-color: var(--primary);
+    width: 41%;
+    height: 92%;
+    position: absolute;
+    border-radius: 50%;
+    top: 27%;
+    left: -134%;
+    z-index: -1;
+    margin-left: 41em;
+}
+
+.telephone1 {
+    position: relative;
+    text-align: center;
+
+}
+
+.telephone1 i {
+    font-size: 5em;
+    margin-top: 1em;
+
+
+}
+
+.paragraphe2 {
+    margin-top: 2.5em;
+    font-size: 1.3em;
+
+
+    text-align: center;
+}
+
+.camera {
+    display: flex;
+    justify-content: center;
+}
+
+.camera_child {
+    width: 30%;
+}
+
+@media screen and (max-width:768px) {
+    .camera {
+        gap: 2em;
+
+    }
+}
